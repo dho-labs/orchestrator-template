@@ -1,0 +1,10 @@
+apiVersion: agentspec.orchestrator.dev/v1alpha1
+kind: RepoSpec
+metadata:
+  key: app
+spec:
+  provider: github
+  owner: your-github-org
+  name: your-repository
+  defaultBranch: main
+  autonomyMode: full

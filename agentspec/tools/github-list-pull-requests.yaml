@@ -1,0 +1,11 @@
+apiVersion: agentspec.orchestrator.dev/v1alpha1
+kind: ToolSpec
+metadata:
+  key: github-list-pull-requests
+spec:
+  source: integration
+  integrationKey: github
+  toolId: list_pull_requests
+  name: List Pull Requests
+  description: List pull requests in the repository.
+  riskClass: read

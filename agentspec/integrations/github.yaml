@@ -1,0 +1,14 @@
+apiVersion: agentspec.orchestrator.dev/v1alpha1
+kind: IntegrationSpec
+metadata:
+  key: github
+spec:
+  provider: github
+  credentials:
+    secretKeys:
+      - GITHUB_TOKEN
+  webhook:
+    enabled: true
+    events:
+      - issues.opened
+      - pull_request.opened

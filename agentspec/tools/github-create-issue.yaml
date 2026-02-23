@@ -1,0 +1,11 @@
+apiVersion: agentspec.orchestrator.dev/v1alpha1
+kind: ToolSpec
+metadata:
+  key: github-create-issue
+spec:
+  source: integration
+  integrationKey: github
+  toolId: create_issue
+  name: Create Issue
+  description: Create a GitHub issue in the repository.
+  riskClass: write_irreversible

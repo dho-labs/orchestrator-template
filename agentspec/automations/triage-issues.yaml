@@ -1,0 +1,20 @@
+apiVersion: agentspec.orchestrator.dev/v1alpha1
+kind: AutomationSpec
+metadata:
+  key: triage-issues
+spec:
+  name: Triage New Issues
+  description: Create work when new GitHub issues with matching labels are opened.
+  trigger:
+    type: github_issue_label
+    config:
+      labels:
+        - bug
+        - triage
+      excludeLabels:
+        - wontfix
+  target:
+    workflowKey: default
+    environmentKey: dev
+    repoKey: app
+  integrationKey: github

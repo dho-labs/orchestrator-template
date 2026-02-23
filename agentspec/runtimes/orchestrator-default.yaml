@@ -1,0 +1,13 @@
+apiVersion: agentspec.orchestrator.dev/v1alpha1
+kind: RuntimeSpec
+metadata:
+  key: orchestrator-default
+spec:
+  role: orchestrator
+  isDefault: true
+  agentHarness: general
+  model: gpt-5.2
+  promptPath: prompts/orchestrator.md
+  toolPolicy:
+    allow: []
+    deny: []

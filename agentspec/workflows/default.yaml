@@ -1,0 +1,20 @@
+apiVersion: agentspec.orchestrator.dev/v1alpha1
+kind: WorkflowSpec
+metadata:
+  key: default
+spec:
+  name: Default Workflow
+  description: Plan, implement, and verify code changes.
+  steps:
+    - key: plan
+      name: Plan
+      agentRole: executor
+      instructions: Clarify approach and constraints before editing files.
+    - key: implement
+      name: Implement
+      agentRole: executor
+      instructions: Make scoped code changes and keep diffs focused.
+    - key: verify
+      name: Verify
+      agentRole: executor
+      instructions: Run relevant checks and summarize evidence.

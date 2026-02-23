@@ -1,0 +1,15 @@
+apiVersion: agentspec.orchestrator.dev/v1alpha1
+kind: EnvironmentSpec
+metadata:
+  key: dev
+spec:
+  name: Development
+  isDefault: true
+  networkPolicy:
+    egressMode: open
+  secrets:
+    requiredKeys:
+      - OPENAI_API_KEY
+  toolPolicy:
+    allow: []
+    deny: []
