@@ -11,4 +11,5 @@ spec:
     enabled: true
     events:
       - issues.opened
+      - issues.labeled
       - pull_request.opened

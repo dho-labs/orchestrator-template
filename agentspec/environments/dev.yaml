@@ -10,6 +10,7 @@ spec:
   secrets:
     requiredKeys:
       - OPENAI_API_KEY
+      - GITHUB_TOKEN
   toolPolicy:
     allow: []
     deny: []
